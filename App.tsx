@@ -29,7 +29,7 @@ const CATEGORY_IMAGES: Record<string, string[]> = {
     'https://raw.githubusercontent.com/marcelorm81/assets/f46698e60409ff4dcf2042dc86b31dcac5beff9c/shop.jpg',
   ],
   'Views': [
-    'https://raw.githubusercontent.com/marcelorm81/assets/f46698e60409ff4dcf2042dc86b31dcac5beff9c/views.jpg',
+    'https://raw.githubusercontent.com/marcelorm81/assets/f46698e60409ff4dcf2042dc86b31dcac5beff9c/view.jpg',
   ]
 };
 
@@ -233,7 +233,7 @@ const LoadingScreen = ({ onComplete, isDataReady }: { onComplete: () => void, is
   const [bgIndex, setBgIndex] = useState(0);
 
   const backgrounds = [
-    'https://images.unsplash.com/photo-1496442226666-8d4a0e29e128?q=80&w=800&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=800&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?q=80&w=800&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1534270804882-6b5048b1c1fc?q=80&w=800&auto=format&fit=crop',
   ];
