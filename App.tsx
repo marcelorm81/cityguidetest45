@@ -10,19 +10,10 @@ import gsap from 'gsap';
 // Curated high-quality Unsplash images for the "212 Luxury" vibe (Optimized Sizes)
 const CATEGORY_IMAGES: Record<string, string[]> = {
   'Eat': [
-    'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1514362545857-3bc16549766b?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1550966871-3ed3c6221741?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=600&auto=format&fit=crop',
+    'https://raw.githubusercontent.com/marcelorm81/assets/f46698e60409ff4dcf2042dc86b31dcac5beff9c/eat.jpg',
   ],
   'Drink': [
-    'https://images.unsplash.com/photo-1514362545857-3bc16549766b?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1556679343-c7306c1976bc?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1536935338788-843bb4d77d82?q=80&w=600&auto=format&fit=crop',
+    'https://raw.githubusercontent.com/marcelorm81/assets/f46698e60409ff4dcf2042dc86b31dcac5beff9c/drink.jpg',
   ],
   'Dance': [
     'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=600&auto=format&fit=crop',
@@ -32,27 +23,44 @@ const CATEGORY_IMAGES: Record<string, string[]> = {
     'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop',
   ],
   'Culture': [
-    'https://images.unsplash.com/photo-1583422409516-2895a77efded?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1548625361-1e2474f331b6?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1554907984-15263bfd63bd?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1518998053901-5348d3969105?q=80&w=600&auto=format&fit=crop',
+    'https://raw.githubusercontent.com/marcelorm81/assets/f46698e60409ff4dcf2042dc86b31dcac5beff9c/culture.jpg',
   ],
   'Shop': [
-    'https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1607083206968-13611e3d76db?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=600&auto=format&fit=crop',
+    'https://raw.githubusercontent.com/marcelorm81/assets/f46698e60409ff4dcf2042dc86b31dcac5beff9c/shop.jpg',
   ],
   'Views': [
-    'https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1506929562872-bb421503ef21?q=80&w=600&auto=format&fit=crop',
+    'https://raw.githubusercontent.com/marcelorm81/assets/f46698e60409ff4dcf2042dc86b31dcac5beff9c/views.jpg',
   ]
 };
+
+// Editorial Content for Category Headers
+const CATEGORY_INFO: Record<string, { headline: string, body: string }> = {
+  'eat': {
+    headline: "Where Flavor Meets High Life",
+    body: "Barcelona has its own version of New York’s food culture — bold, stylish, and always on the move. From smashburgers with attitude to rooftops that feel straight out of Midtown, this is where the city’s appetite meets the 212 spirit: fast, elegant, and full of personality."
+  },
+  'drink': {
+    headline: "Cocktails With a City Edge",
+    body: "From speakeasies hidden behind walls to rooftops glowing over the skyline, Barcelona’s drinking scene carries the same magnetic pulse as Manhattan nights. Think dim lights, crafted cocktails, and an energy that feels designed for those who move with confidence."
+  },
+  'dance': {
+    headline: "Where the Night Has a Pulse",
+    body: "Barcelona after dark becomes its own New York — raw, glossy, electric. Rooftops, warehouses, velvet rooms, and waterfront clubs turn into stages of movement and charisma. This is where the 212 high-life comes alive: loud, seductive, unforgettable."
+  },
+  'culture': {
+    headline: "The City’s Creative Heartbeat",
+    body: "Museums, theaters, and cultural hubs that echo the elegance and ambition of New York’s art scene. Barcelona blends modernity with heritage, giving you spaces that feel refined, expressive, and deeply connected to the new 212 world."
+  },
+  'shop': {
+    headline: "Style That Defines the City",
+    body: "From the luxury strip of Passeig de Gràcia to the indie fashion corners of Born and Sant Antoni, Barcelona mirrors the fashion DNA of Fifth Avenue, SoHo, and Williamsburg. This is where taste becomes identity — and where the 212 man finds his look."
+  },
+  'views': {
+    headline: "Instant Icons",
+    body: "Every great city has landmarks that shape its character. Barcelona’s skyline moments carry the same emotional weight as New York’s: iconic, magnetic, impossible to forget. From mountain views to seaside glow, this is the city at its most cinematic."
+  }
+};
+
 
 const getCategoryImage = (categoryTitle: string, index: number = 0) => {
   const images = CATEGORY_IMAGES[categoryTitle] || CATEGORY_IMAGES['Views'];
@@ -65,6 +73,35 @@ const getPlaceImage = (place: Place, categoryTitle: string) => {
 };
 
 // --- Components ---
+
+const DynamicCitySuffix = () => {
+  const [text, setText] = useState("BCN");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setText((prev) => (prev === "BCN" ? "NYC" : "BCN"));
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <span className="text-brand-gold relative inline-block w-[3ch] text-left">
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={text}
+          initial={{ opacity: 0, y: 5 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -5 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+          className="absolute left-0 top-0"
+        >
+          {text}
+        </motion.span>
+      </AnimatePresence>
+      <span className="opacity-0">BCN</span> {/* Spacer to keep layout stable */}
+    </span>
+  );
+};
 
 const IntroSequence = ({ onComplete }: { onComplete: (location: UserLocation | null) => void }) => {
   const [phase, setPhase] = useState<'STATIC' | 'CYCLING' | 'LOCKED'>('STATIC');
@@ -777,14 +814,20 @@ const App: React.FC = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                className="flex-shrink-0 px-6 pt-8 pb-4 md:pt-12 md:pb-6 max-w-7xl mx-auto flex flex-col items-center text-center z-10 relative"
+                className="flex-shrink-0 px-6 pt-10 pb-6 md:pt-16 md:pb-10 max-w-7xl mx-auto flex flex-col items-center text-center z-10 relative pointer-events-none"
             >
-                <div className="mb-4">
-                     <span className="text-[10px] uppercase tracking-[0.3em] text-brand-gold border border-brand-gold/30 px-3 py-1 rounded-full">212 city guide</span>
+                <div className="mb-6 pointer-events-auto">
+                     <span className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] text-brand-gold border border-brand-gold/40 bg-black/20 backdrop-blur-md px-4 py-1.5 rounded-full">212 city guide</span>
                 </div>
-                <h1 className="text-4xl md:text-7xl font-sans font-bold text-white mb-4 leading-none tracking-tight">NYC IS <span className="text-brand-gold">BCN</span></h1>
-                <div className="max-w-2xl mx-auto px-6 md:px-0">
-                  <p className="text-gray-300 text-xs md:text-sm leading-relaxed font-light">Barcelona becomes your Mediterranean Manhattan — bold, sleek, and always moving. Discover the city’s 212 twins, unlock high-life rewards, and step deeper into the new golden age of 212.</p>
+                
+                <h1 className="text-6xl md:text-[8rem] font-sans font-bold text-white mb-6 leading-[0.9] tracking-tighter drop-shadow-2xl">
+                  NYC IS <br className="md:hidden" /> <span className="text-brand-gold">BCN</span>
+                </h1>
+                
+                <div className="max-w-md md:max-w-xl mx-auto px-4 md:px-0 pointer-events-auto">
+                  <p className="text-white/80 text-xs md:text-sm leading-relaxed font-sans font-medium tracking-wide drop-shadow-md">
+                    Barcelona becomes your Mediterranean Manhattan — bold, sleek, and always moving. Discover the city’s 212 twins, unlock high-life rewards, and step deeper into the new golden age of 212.
+                  </p>
                 </div>
             </motion.header>
         )}
@@ -823,11 +866,31 @@ const App: React.FC = () => {
                                     <span className="text-xs uppercase tracking-widest hidden md:inline">Back</span>
                                 </button>
                                 <div className="text-center">
-                                    <h2 className="text-xl md:text-2xl font-sans font-bold text-white tracking-tight">{selectedCategory.title} BCN NYC</h2>
-                                    <p className="text-brand-gold text-[10px] uppercase tracking-[0.2em] mt-1">{selectedCategory.places.length} Places Found</p>
+                                    <h2 className="text-3xl md:text-5xl font-sans font-bold text-white tracking-tight uppercase flex items-center justify-center gap-4">
+                                        {selectedCategory.title} <DynamicCitySuffix />
+                                    </h2>
+                                    <p className="text-brand-gold text-[10px] uppercase tracking-[0.2em] mt-2">{selectedCategory.places.length} Places Found</p>
                                 </div>
                                 <div className="w-8"></div>
                             </div>
+                            
+                            {/* NEW: Category Description Block */}
+                            {CATEGORY_INFO[selectedCategory.id.toLowerCase()] && (
+                                <motion.div 
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.2 }}
+                                    className="max-w-2xl mx-auto text-center"
+                                >
+                                    <h3 className="text-brand-gold font-sans font-bold uppercase tracking-[0.15em] text-xs md:text-sm mb-3">
+                                        {CATEGORY_INFO[selectedCategory.id.toLowerCase()].headline}
+                                    </h3>
+                                    <p className="text-white/70 font-sans text-xs md:text-sm leading-relaxed font-light">
+                                        {CATEGORY_INFO[selectedCategory.id.toLowerCase()].body}
+                                    </p>
+                                </motion.div>
+                            )}
+
                             <div className="overflow-x-auto no-scrollbar -mx-6 px-6 md:mx-0 md:px-0">
                                 <div className="flex items-center justify-start md:justify-center gap-2 min-w-max">
                                     {data.categories.map((cat) => (
